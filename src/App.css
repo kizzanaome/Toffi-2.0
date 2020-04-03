@@ -35,4 +35,319 @@
   to {
     transform: rotate(360deg);
   }
+
+}
+
+.navBar{
+  background-color: #4E279E;
+  position: absolute;
+  width: 1920px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+
+}
+
+.Logo , h1{
+  text-align: left;
+  position: absolute;
+  font-family: Ridin Dirty;
+  color: white;
+  padding-left: 50px;
+ 
+}
+
+/* button */
+.startbtn{
+position: absolute;
+width: 188px;
+height: 48px;
+left: 80%;
+top: 16px;
+border-radius:8px ;
+font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color:  #4E279E;
+float: right;
+
+}
+
+.wrapper{
+  height: 100vh;
+  /* width: 955px; */
+
+}
+
+.Image-Partition{
+  height: 100vh;
+  background-color: white;
+  width: 955px;
+  text-align: center;
+}
+
+.title > h1{
+  position: absolute;
+  height: 68px;
+  left: 253px;
+  top: 200px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 47px;
+  line-height: 56px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #5D26A6;
+}
+
+.title > h5{
+  position: absolute;
+  width: 320.68px;
+  height: 65.35px;
+  left: 309px;
+  top: 300px;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #838383;
+}
+
+.image >img{
+  position: absolute;
+  width: 363px;
+  height: 278px;
+  left: 286px;
+  top: 425px;
+}
+
+
+.question-title>h1{
+  left: 905px;
+  top: 136px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  display: flex;
+  color: #961818;
+}
+
+.page-refrence > h4{
+  left: 956px;
+  position: absolute;
+  top: 220px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  display: flex;
+
+  color: #C4C4C4;
+}
+
+.page-refrence> hr{
+  position: absolute;
+  width: 131px;
+  height: 5px;
+  left: 955px;
+  top: 200px;
+
+  background: #32BA7C;
+}
+
+.question-one > h1{
+
+  left: 905px;
+  top: 268px;
+  font-family: Rubik;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.question-one  ul{
+
+  position: absolute;
+  /* width: 100%; */
+  height: 75.66px;
+  left: 950px;
+  top: 309px;
+  list-style: none;
+  font-family: Rubik;
+  font-style: normal;
+
+}
+
+ul li{
+  
+  display: flex;
+  position: relative;
+  float: left;
+  width:50%;
+  height: 40px;
+  padding: 0;
+  margin-right: -70px;
+
+}
+
+ul li input[type=radio]{
+  transform: scale(1.8);
+
+}
+
+ul li label{
+font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+margin-top: -5px;
+margin-left: 15px;
+
+}
+
+
+.question-two > h1{
+  /* right: 670px; */
+
+  left: 905px;
+  top: 450px;
+  font-family: Rubik;
+  font-style: normal;
+  /* font-weight: 500; */
+  font-size: 20px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.question-two  ul{
+
+  position: absolute;
+  /* width: 100%; */
+  height: 75.66px;
+  left: 950px;
+  top: 500px;
+  list-style: none;
+  font-family: Rubik;
+  font-style: normal;
+
+}
+
+ul li{
+  
+  display: flex;
+  position: relative;
+  float: left;
+  width:50%;
+  height: 40px;
+  padding: 0;
+  margin-right: -70px;
+
+}
+
+ul li input[type=radio]{
+  transform: scale(1.8);
+
+}
+
+ul li label{
+font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+margin-top: -5px;
+margin-left: 15px;
+
+}
+
+.question-three > h1{
+  /* right: 670px; */
+
+  left: 905px;
+  top: 640px;
+  font-family: Rubik;
+  font-style: normal;
+  /* font-weight: 500; */
+  font-size: 20px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.question-three  ul{
+
+  position: absolute;
+  /* width: 100%; */
+  height: 75.66px;
+  left: 950px;
+  top: 690px;
+  list-style: none;
+  font-family: Rubik;
+  font-style: normal;
+
+}
+
+ul li{
+  
+  display: flex;
+  position: relative;
+  float: left;
+  width:50%;
+  height: 40px;
+  padding: 0;
+  margin-right: -70px;
+
+}
+
+ul li input[type=radio]{
+  transform: scale(1.8);
+
+}
+
+ul li label{
+font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+margin-top: -5px;
+margin-left: 15px;
+
+}
+
+.previousbtn{
+  position: absolute;
+  width: 109px;
+  height: 48px;
+  left: 958px;
+  top: 855px;
+  border-radius:8px ;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color:  #4E279E;
+  float: right;
+
+}
+
+.nextbtn{
+  position: absolute;
+  width: 109px;
+  height: 48px;
+  left: 1070px;
+  top: 855px;
+  background: #4D269D;
+  border: 2px solid #4D269D;
+  box-sizing: border-box;
+  border-radius: 7px;
 }
