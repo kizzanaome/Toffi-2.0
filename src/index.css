@@ -1,15 +1,19 @@
-body {
-  margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
-  font-family: Poppins;
-  /* font-family: Rubik; */
+@font-face {
+  font-family: Poppins; 
+  src: url('./assets/fonts/Poppins/Poppins-Light.otf');
 }
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* @font-face {
+  font-family: Caviar Dreams Bold;
+  src: url('./assets/fonts/CaviarDreams_Bold.ttf');
+}
+
+@font-face {
+  font-family: Ridin Dirty;
+  src: url('./assets/fonts/RidinDirty.ttf');
 } */
+
+body {
+  margin: 0;
+  font-family: Poppins;
+} 

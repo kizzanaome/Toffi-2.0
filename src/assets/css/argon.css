@@ -1,21 +1,5 @@
 @charset 'UTF-8';
-/*!
 
-=========================================================
-* Argon Dashboard - v1.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-dashboard
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
-
-* Coded by www.creative-tim.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 :root
 {
     --blue: #5e72e4;
@@ -50,8 +34,8 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: Open Sans, sans-serif;
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    /* --font-family-sans-serif: Open Sans, sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; */
 }
 
 *,
@@ -63,9 +47,8 @@
 
 html
 {
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     line-height: 1.15;
-
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -86,15 +69,12 @@ section
 
 body
 {
-    font-family: Open Sans, sans-serif;
+    /* font-family: Open Sans, sans-serif; */
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-
     margin: 0;
-
     text-align: left;
-
     color: #525f7f;
     background-color: #f8f9fe;
 }
@@ -133,11 +113,9 @@ abbr[title],
 abbr[data-original-title]
 {
     cursor: help;
-            text-decoration: underline;
-            text-decoration: underline dotted;
-
+    text-decoration: underline;
+    text-decoration: underline dotted;
     border-bottom: 0;
-
     -webkit-text-decoration: underline dotted;
     text-decoration-skip-ink: none;
 }
@@ -146,7 +124,6 @@ address
 {
     font-style: normal;
     line-height: inherit; 
-
     margin-bottom: 1rem;
 }
 
@@ -198,9 +175,7 @@ sup
 {
     font-size: 75%;
     line-height: 0;
-
     position: relative;
-
     vertical-align: baseline;
 }
 
@@ -217,27 +192,23 @@ sup
 a
 {
     text-decoration: none;
-
     color: #5e72e4;
     background-color: transparent;
 }
 a:hover
 {
     text-decoration: none; 
-
     color: #233dd2;
 }
 
 a:not([href])
 {
     text-decoration: none; 
-
     color: inherit;
 }
 a:not([href]):hover
 {
     text-decoration: none; 
-
     color: inherit;
 }
 
@@ -246,14 +217,13 @@ code,
 kbd,
 samp
 {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    /* font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; */
     font-size: 1em;
 }
 
 pre
 {
     overflow: auto; 
-
     margin-top: 0;
     margin-bottom: 1rem;
 }
@@ -266,14 +236,12 @@ figure
 img
 {
     vertical-align: middle;
-
     border-style: none;
 }
 
 svg
 {
     overflow: hidden;
-
     vertical-align: middle;
 }
 
@@ -286,11 +254,8 @@ caption
 {
     padding-top: 1rem;
     padding-bottom: 1rem;
-
     caption-side: bottom; 
-
     text-align: left;
-
     color: #8898aa;
 }
 
@@ -302,7 +267,6 @@ th
 label
 {
     display: inline-block;
-
     margin-bottom: .5rem;
 }
 
@@ -323,10 +287,9 @@ select,
 optgroup,
 textarea
 {
-    font-family: inherit;
+    /* font-family: inherit; */
     font-size: inherit;
     line-height: inherit; 
-
     margin: 0;
 }
 
@@ -369,7 +332,6 @@ button::-moz-focus-inner,
 [type='submit']::-moz-focus-inner
 {
     padding: 0;
-
     border-style: none;
 }
 
@@ -391,7 +353,6 @@ input[type='month']
 textarea
 {
     overflow: auto;
-
     resize: vertical;
 }
 
@@ -400,7 +361,6 @@ fieldset
     min-width: 0;
     margin: 0;
     padding: 0;
-
     border: 0;
 }
 
@@ -408,16 +368,12 @@ legend
 {
     font-size: 1.5rem;
     line-height: inherit;
-
     display: block;
-
     width: 100%;
     max-width: 100%;
     margin-bottom: .5rem;
     padding: 0;
-
     white-space: normal; 
-
     color: inherit;
 }
 @media (max-width: 1200px)
@@ -442,7 +398,6 @@ progress
 [type='search']
 {
     outline-offset: -2px;
-
     -webkit-appearance: none;
 }
 
@@ -493,7 +448,7 @@ h6,
 .h5,
 .h6
 {
-    font-family: inherit;
+    /* font-family: inherit; */
     font-weight: 600;
     line-height: 1.5;
 
@@ -5712,7 +5667,7 @@ input[type='button'].btn-block
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link
 {
-    color: #525f7f;
+    color: #fff;
     border-color: #dee2e6 #dee2e6 #f8f9fe; 
     background-color: #f8f9fe;
 }
@@ -6144,7 +6099,7 @@ input[type='button'].btn-block
 
 .navbar-light .navbar-brand
 {
-    color: rgba(0, 0, 0, .9);
+    color: rgba(150, 20, 20, 0.9);
 }
 .navbar-light .navbar-brand:hover,
 .navbar-light .navbar-brand:focus
@@ -6154,12 +6109,12 @@ input[type='button'].btn-block
 
 .navbar-light .navbar-nav .nav-link
 {
-    color: rgba(0, 0, 0, .6);
+    color: rgba(255, 255, 255);
 }
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus
 {
-    color: rgba(0, 0, 0, .7);
+    color: rgba(255, 255, 255, 0.5);
 }
 .navbar-light .navbar-nav .nav-link.disabled
 {
@@ -6171,7 +6126,7 @@ input[type='button'].btn-block
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active
 {
-    color: rgba(0, 0, 0, .9);
+    color: rgba(255, 255, 255);
 }
 
 .navbar-light .navbar-toggler
@@ -8135,7 +8090,7 @@ a.close.disabled
 
 .tooltip
 {
-    font-family: Open Sans, sans-serif;
+    /* font-family: Open Sans, sans-serif; */
     font-size: .875rem;
     font-weight: 400;
     font-style: normal;
@@ -8282,7 +8237,7 @@ a.close.disabled
 
 .popover
 {
-    font-family: Open Sans, sans-serif;
+    /* font-family: Open Sans, sans-serif; */
     font-size: .875rem;
     font-weight: 400;
     font-style: normal;
@@ -17590,10 +17545,10 @@ button.bg-darker:focus
     }
 }
 
-.text-monospace
+/* .text-monospace
 {
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !important;
-}
+} */
 
 .text-justify
 {
@@ -18830,7 +18785,7 @@ a.btn-icon-only
 
 .btn-icon-clipboard
 {
-    font-family: inherit;
+    /* font-family: inherit; */
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.25;
@@ -19561,7 +19516,7 @@ a.btn-icon-only
 
 .custom-toggle-slider:after
 {
-    font-family: inherit;
+    /* font-family: inherit; */
     font-size: .75rem;
     font-weight: 600;
     line-height: 24px;
@@ -20418,10 +20373,10 @@ textarea[resize='horizontal']
 {
     font-size: 3.25rem;
 }
-.icon-lg + .icon-text
+/* .icon-lg + .icon-text
 {
     width: calc(100% - $icon-size-lg - 1);
-}
+} */
 
 .icon-sm
 {
@@ -20433,10 +20388,10 @@ textarea[resize='horizontal']
 {
     font-size: 1.25rem;
 }
-.icon-sm + .icon-text
+/* .icon-sm + .icon-text
 {
     width: calc(100% - $icon-size-sm - 1);
-}
+} */
 
 .icon-xs
 {
@@ -20448,10 +20403,10 @@ textarea[resize='horizontal']
 {
     font-size: .5rem;
 }
-.icon-xs + .icon-text
+/* .icon-xs + .icon-text
 {
     width: calc(100% - $icon-size-xs - 1);
-}
+} */
 
 .icon-shape
 {
@@ -21382,7 +21337,8 @@ textarea[resize='horizontal']
 .navbar-vertical.navbar-light
 {
     border-color: rgba(0, 0, 0, .05); 
-    background-color: #f6f9fc;
+    /* background-color: #0f74da; */
+    background-image: url('../images/bg.svg');
 }
 .navbar-vertical.navbar-dark
 {
@@ -21397,7 +21353,7 @@ textarea[resize='horizontal']
 .navbar-vertical .navbar-brand > img
 {
     max-width: 100%;
-    max-height: 2rem;
+    max-height: 2.2rem;
 }
 @media (min-width: 768px)
 {
@@ -21525,6 +21481,8 @@ textarea[resize='horizontal']
 {
     padding-right: 1.5rem; 
     padding-left: 1.5rem;
+    /* border: 1px solid red; */
+    margin-top: 0.7rem;
 }
 .navbar-vertical.navbar-expand-xs > [class*='container']
 {
@@ -21590,13 +21548,13 @@ textarea[resize='horizontal']
 }
 .navbar-vertical.navbar-expand-xs .navbar-nav > .nav-item > .nav-link.active
 {
-    margin-right: .5rem;
-    margin-left: .5rem;
+    /* margin-right: .5rem;
+    margin-left: .5rem; */
     padding-right: 1rem;
     padding-left: 1rem;
 
-    border-radius: .375rem; 
-    background: #f6f9fc;
+    /* border-radius: .375rem;  */
+    background-color: rgba(255, 255, 255, 0.5);
 }
 .navbar-vertical.navbar-expand-xs .lavalamp-object
 {
@@ -21640,6 +21598,7 @@ textarea[resize='horizontal']
     {
         padding-right: 1.5rem; 
         padding-left: 1.5rem;
+        margin-top: 0.7rem;
     }
     .navbar-vertical.navbar-expand-sm > [class*='container']
     {
@@ -21759,6 +21718,7 @@ textarea[resize='horizontal']
     {
         padding-right: 1.5rem; 
         padding-left: 1.5rem;
+        margin-top: 0.7rem;
     }
     .navbar-vertical.navbar-expand-md > [class*='container']
     {
@@ -21878,6 +21838,7 @@ textarea[resize='horizontal']
     {
         padding-right: 1.5rem; 
         padding-left: 1.5rem;
+        margin-top: 0.7rem;
     }
     .navbar-vertical.navbar-expand-lg > [class*='container']
     {
@@ -21997,6 +21958,7 @@ textarea[resize='horizontal']
     {
         padding-right: 1.5rem; 
         padding-left: 1.5rem;
+        margin-top: 0.7rem;
     }
     .navbar-vertical.navbar-expand-xl > [class*='container']
     {
@@ -26453,7 +26415,7 @@ table.dataTable tbody > tr.selected
     }
 }
 
-[data-calendar-month='0']
+/* [data-calendar-month='0']
 {
     background-image: url('../img/calendar/january.jpg');
 }
@@ -26511,7 +26473,7 @@ table.dataTable tbody > tr.selected
 [data-calendar-month='11']
 {
     background-image: url('../img/calendar/december.jpg');
-}
+} */
 
 .card-calendar .card-header
 {
@@ -27255,10 +27217,10 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
     left: auto;
 }
 
-.ql-container
+/* .ql-container
 {
     font-family: Open Sans, sans-serif;
-}
+} */
 
 .ql-toolbar
 {

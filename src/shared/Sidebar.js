@@ -1,15 +1,19 @@
 import React from 'react';
 import '../assets/css/argon.css';
+import '../assets/css/all.min.css';
+import logo from '../assets/images/logotoffi.png'
+import dashboard from '../assets/images/dashboard.svg'
+// import '../assets/css/nucleo.css';
 
 const Sidebar = () => {
 
     return (
-        <nav className="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+        <nav className="sidenav navbar-vertical fixed-left navbar-expand-xs navbar-light" id="sidenav-main">
             <div className="scrollbar-inner">
                 {/* <!-- Brand --> */}
                 <div className="sidenav-header  align-items-center">
-                    <a className="navbar-brand" href="javascript:void(0)">
-                        <img src="../assets/img/brand/blue.png" className="navbar-brand-img" alt="..." />
+                    <a className="navbar-brand" href="index.html">
+                        <img src={logo} className="navbar-brand-img" alt="..." />
                     </a>
                 </div>
                 <div className="navbar-inner">
@@ -19,8 +23,9 @@ const Sidebar = () => {
                         <ul className="navbar-nav">
                             <li className="nav-item">
                                 <a className="nav-link active" href="dashboard.html">
-                                    <i className="ni ni-tv-2 text-primary"></i>
-                                    <span className="nav-link-text">Dashboard</span>
+                                    {/* <i className="ni ni-tv-2 text-primary"></i> */}
+                                    <img src={dashboard} className="" alt="..." />
+                                    <span className="">Dashboard</span>
                                 </a>
                             </li>
                             <li className="nav-item">
