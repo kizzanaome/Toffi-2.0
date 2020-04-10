@@ -1,80 +1,60 @@
 import React from 'react';
-import '../assets/css/argon.css';
-import '../assets/css/all.min.css';
-import logo from '../assets/images/logotoffi.png'
-import dashboard from '../assets/images/dashboard.svg'
-// import '../assets/css/nucleo.css';
 
 const Sidebar = () => {
 
     return (
-        <nav className="sidenav navbar-vertical fixed-left navbar-expand-xs navbar-light" id="sidenav-main">
-            <div className="scrollbar-inner">
-                {/* <!-- Brand --> */}
-                <div className="sidenav-header  align-items-center">
-                    <a className="navbar-brand" href="index.html">
-                        <img src={logo} className="navbar-brand-img" alt="..." />
+        <nav className="sidebar sidebar-offcanvas" id="sidebar">
+            <ul className="nav">
+                <li className="nav-item">
+                    <a className="nav-link" href="index.html">
+                        <i className="mdi mdi-view-dashboard menu-icon"></i>
+                        <span className="menu-title">Dashboard</span>
                     </a>
-                </div>
-                <div className="navbar-inner">
-                    {/* <!-- Collapse --> */}
-                    <div className="collapse navbar-collapse" id="sidenav-collapse-main">
-                        {/* <!-- Nav items --> */}
-                        <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <a className="nav-link active" href="dashboard.html">
-                                    {/* <i className="ni ni-tv-2 text-primary"></i> */}
-                                    <img src={dashboard} className="" alt="..." />
-                                    <span className="">Dashboard</span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="icons.html">
-                                    <i className="ni ni-planet text-orange"></i>
-                                    <span className="nav-link-text">View Surveys</span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="map.html">
-                                    <i className="ni ni-pin-3 text-primary"></i>
-                                    <span className="nav-link-text">Create Questions</span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="profile.html">
-                                    <i className="ni ni-single-02 text-yellow"></i>
-                                    <span className="nav-link-text">Statistics</span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="tables.html">
-                                    <i className="ni ni-bullet-list-67 text-default"></i>
-                                    <span className="nav-link-text">View Tables</span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="login.html">
-                                    <i className="ni ni-key-25 text-info"></i>
-                                    <span className="nav-link-text">Users</span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="register.html">
-                                    <i className="ni ni-circle-08 text-pink"></i>
-                                    <span className="nav-link-text">About</span>
-                                </a>
-                            </li>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                        <i className="mdi mdi-eye menu-icon"></i>
+                        <span className="menu-title">View Surveys</span>
+                        <i className="menu-arrow"></i>
+                    </a>
+                    <div className="collapse" id="ui-basic">
+                        <ul className="nav flex-column sub-menu">
+                            <li className="nav-item"> <a className="nav-link" href="pages/ui-features/buttons.html">Create Survey</a></li>
+                            <li className="nav-item"> <a className="nav-link" href="pages/ui-features/typography.html">Survey Total</a></li>
                         </ul>
-                        {/* <!-- Divider --> */}
-                        <hr className="my-3" />
-                        {/* <!-- Heading --> */}
-                        <h6 className="navbar-heading p-0 text-muted">
-                            <span className="docs-normal">Documentation</span>
-                        </h6>
-
                     </div>
-                </div>
-            </div>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="pages/forms/basic_elements.html">
+                        <i className="mdi mdi-comment menu-icon"></i>
+                        <span className="menu-title">Create Questions</span>
+                    </a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="pages/charts/chartjs.html">
+                        <i className="mdi mdi-chart-bar menu-icon"></i>
+                        <span className="menu-title">Statistics</span>
+                    </a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="pages/tables/basic-table.html">
+                        <i className="mdi mdi-table-large menu-icon"></i>
+                        <span className="menu-title"> View Tables</span>
+                    </a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" data-toggle="collapse" href="pages/samples/login.html" aria-expanded="false" aria-controls="auth">
+                        <i className="mdi mdi-account menu-icon"></i>
+                        <span className="menu-title">Users</span>
+                    </a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="documentation/documentation.html">
+                        <i className="mdi mdi-file-document-box-outline menu-icon"></i>
+                        <span className="menu-title">Documentation</span>
+                    </a>
+                </li>
+            </ul>
         </nav>
     );
 }

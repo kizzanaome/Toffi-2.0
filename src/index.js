@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import '../src/assets/css/argon.css'
+import './assets/css/materialdesignicons.min.css';
+import $ from 'jquery';
+// import './assets/js/vendor.bundle.base';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
