@@ -2,14 +2,14 @@ import React from 'react';
 import check from '../../assets/images/check.svg';
 import question  from '../../assets/images/question.svg';
 import flag from '../../assets/images/flag.svg';
-import sun from '../../assets/images/question.svg';
+import sun from '../../assets/images/sun.svg';
 
 const Tiles = () => {
 
     return (
-        <div class="row">
-            <div class="col-md-12 grid-margin stretch-card">
-                <div class="card">
+        <div className="row">
+            <div className="col-md-12 grid-margin stretch-card">
+                <div className="card">
                     <div className="card-body p-0">
                         <div className="tab-content py-0 px-0">
                             <div className="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">

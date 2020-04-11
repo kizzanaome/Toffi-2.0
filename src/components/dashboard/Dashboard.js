@@ -1,21 +1,26 @@
 import React from 'react';
 import Sidebar from '../../shared/Sidebar'
 import Navbar from '../../shared/Navbar';
+import Footer from '../../shared/Footer';
 import Tiles from './Tiles';
 import Heading from './Heading';
+import Statistics from './Statistics';
+
 
 const Dashboard = () => {
 
     return (
-        <div class="container-scroller">
+        <div className="container-scroller">
             <Navbar />
-            <div class=" page-body-wrapper">
+            <div className=" page-body-wrapper">
                 <Sidebar />
-                <div class="main-panel">
-                    <div class="content-wrapper">
+                <div className="main-panel">
+                    <div className="content-wrapper">
                         <Heading />
-                        <Tiles />     
+                        <Tiles />
+                        <Statistics />  
                     </div>
+                    <Footer />
                 </div>
             </div>
         </div>

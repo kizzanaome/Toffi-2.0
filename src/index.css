@@ -8587,9 +8587,17 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+
 @font-face {
   font-family: Rubik;
   src: url("./assets/fonts/Rubik/Rubik-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Rubik-bold;
+  src: url("./assets/fonts/Rubik/Rubik-Medium.ttf");
   font-style: normal;
   font-weight: normal;
 }
@@ -12935,7 +12943,9 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
+  background-color: #fff;
   background-clip: border-box;
+  border: 1px solid #e7eaed;
   border-radius: 0;
 }
 
@@ -19953,7 +19963,7 @@ code {
 }
 
 .card .card-description {
-  margin-bottom: .875rem;
+  margin-bottom: 1rem !important;
   font-weight: 400;
   color: #76838f;
 }
@@ -21032,20 +21042,20 @@ dl li {
 /*-------------------------------------------------------------------*/
 /* === Landing screens === */
 /* Auth */
-.auth .login-half-bg {
-  /* background: url("../images/auth/login-bg.jpg"); */
+/* .auth .login-half-bg {
+  background: url("../images/auth/login-bg.jpg");
   background-size: cover;
 }
 
 .auth .register-half-bg {
-  /* background: url("../images/auth/register-bg.jpg"); */
+  background: url("../images/auth/register-bg.jpg");
   background-size: cover;
 }
 
 .auth.lock-full-bg {
-  /* background: url("../images/auth/lockscreen-bg.jpg"); */
+  background: url("../images/auth/lockscreen-bg.jpg");
   background-size: cover;
-}
+} */
 
 .auth .lock-profile-img {
   width: 90px;
@@ -21131,7 +21141,7 @@ dl li {
 }
 
 .page-body-wrapper {
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 70px);
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -21149,7 +21159,7 @@ dl li {
 
 .main-panel {
   transition: width 0.25s ease, margin 0.25s ease;
-  width: calc(100% - 257px);
+  width: calc(100% - 270px);
   min-height: calc(100vh - 60px);
   display: -webkit-flex;
   display: flex;
@@ -21186,7 +21196,7 @@ dl li {
   font-weight: 500;
   padding: 0;
   padding-top: 50px;
-  width: 257px;
+  width: 270px;
   z-index: 11;
   transition: width 0.25s ease, background 0.25s ease;
   -webkit-transition: width 0.25s ease, background 0.25s ease;
@@ -21392,7 +21402,7 @@ dl li {
     top: 60px;
     bottom: 0;
     overflow: auto;
-    right: -257px;
+    right: -270px;
     -webkit-transition: all 0.25s ease-out;
     -o-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
@@ -21418,7 +21428,7 @@ dl li {
   -webkit-transition: width 0.25s ease, background 0.25s ease;
   -moz-transition: width 0.25s ease, background 0.25s ease;
   -ms-transition: width 0.25s ease, background 0.25s ease;
-  width: 257px;
+  width: 270px;
   text-align: center;
   height: 100px;
 }
@@ -21451,7 +21461,7 @@ dl li {
 }
 
 .navbar .navbar-brand-wrapper .navbar-brand-inner-wrapper .navbar-brand img {
-  width: calc(257px - 150px);
+  width: calc(270px - 150px);
   max-width: 100%;
   height: 34px;
   margin: auto;
@@ -21491,7 +21501,7 @@ dl li {
   color: #9b9b9b;
   padding-left: 1.062rem;
   padding-right: 1.062rem;
-  width: calc(100% - 257px);
+  width: calc(100% - 270px);
   height: 70px;
   margin-top: -30px;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
@@ -21646,7 +21656,7 @@ dl li {
   margin-top: 0;
   right: 0;
   left: auto;
-  top: 60px;
+  top: 70px;
 }
 
 .rtl .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown {
@@ -21955,4 +21965,3 @@ dl li {
 }
 
 /*# sourceMappingURL=maps/style.css.map */
-
