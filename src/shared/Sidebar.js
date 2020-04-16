@@ -7,10 +7,10 @@ const Sidebar = () => {
         <nav className="sidebar sidebar-offcanvas" id="sidebar">
             <ul className="nav">
                 <li className="nav-item">
-                    <a className="nav-link" href="index.html">
+                    <Link className="nav-link" to="/">
                         <i className="mdi mdi-view-dashboard menu-icon"></i>
                         <span className="menu-title">Dashboard</span>
-                    </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="/nosurvey" aria-expanded="false" aria-controls="ui-basic">
