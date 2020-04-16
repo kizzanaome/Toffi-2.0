@@ -1,0 +1,48 @@
+.stuff{
+    text-align: center;
+    width: 60%;
+    display: flex;
+    margin: 120px auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stuff .inside > h1{
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 57px;
+}
+.stuff .inside > h4{
+font-weight: 310;
+font-size: 30px;
+line-height: 36px;
+}
+
+.stuff .inside > a{
+text-decoration: none;
+font-family: Rubik;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #4D269D;
+}
+
+.headings >ul{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 340px;  
+    left: 350px;
+
+}
+
+.headings> ul> li{
+    width: 250px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    color: #97A1B7;
+} 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
 
@@ -12,17 +13,11 @@ const Sidebar = () => {
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                    <Link className="nav-link" to="/nosurvey" aria-expanded="false" aria-controls="ui-basic">
                         <i className="mdi mdi-eye menu-icon"></i>
-                        <span className="menu-title">View Surveys</span>
+                        <span  className="menu-title">View Surveys</span>
                         <i className="menu-arrow"></i>
-                    </a>
-                    <div className="collapse" id="ui-basic">
-                        <ul className="nav flex-column sub-menu">
-                            <li className="nav-item"> <a className="nav-link" href="pages/ui-features/buttons.html">Create Survey</a></li>
-                            <li className="nav-item"> <a className="nav-link" href="pages/ui-features/typography.html">Survey Total</a></li>
-                        </ul>
-                    </div>
+                    </Link>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="pages/forms/basic_elements.html">

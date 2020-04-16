@@ -1,12 +1,16 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import Dashboard from './components/dashboard/Dashboard';
+import Routes from './routes/routes';
+
+
 
 const App = () => {
 	return (
-		<BrowserRouter>
-			<Dashboard />
-		</BrowserRouter>
+		// <BrowserRouter>
+		// 	{/* <Dashboard /> */}
+		// 	<NoSurvey/>
+		// </BrowserRouter>
+		<Routes />
 	);
 }
 
