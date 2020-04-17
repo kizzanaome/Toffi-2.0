@@ -5,6 +5,7 @@ import Dashboard from '../components/dashboard/Dashboard';
 import NoSurvey from '../components/surveys/NoSurveys';
 
 const Routes = () => (
+
     <Router>
         <Switch>
             <Route path="/" exact component={ Dashboard } />
@@ -12,6 +13,7 @@ const Routes = () => (
             <Route path="/nosurvey" exact component={ NoSurvey }/>
         </Switch>
     </Router>
+
 )
 
 export default Routes;

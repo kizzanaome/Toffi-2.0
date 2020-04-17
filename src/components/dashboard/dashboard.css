@@ -25,3 +25,24 @@
 .tom {
   width: 20%;
 }
+
+.stats {
+  margin-top: -20px;
+}
+
+@media (max-width: 991.98px) {
+  .more {
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tab-card-3 {
+    margin: 0 10px 20px 0;
+  }
+}
+
+.no-bg {
+  background-color: transparent;
+  box-shadow: none !important;
+}
