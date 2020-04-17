@@ -16,50 +16,52 @@ const Statistics = () => {
                 <div className="col-lg-6 grid-margin stretch-card">
                     <div className="card">
                         <div className="card-body">
-                            <h4 className="card-title">Hoverable Table</h4>
+                            <h4 className="card-title">Reports</h4>
                             <p className="card-description">
-                                Add class <code>.table-hover</code>
+                                A tabular representation of the data collected overtime of the users showing their status and stature in the company
                             </p>
                             <div className="table-responsive">
                                 <table className="table table-hover">
                                     <thead>
                                         <tr>
                                             <th>User</th>
-                                            <th>Product</th>
-                                            <th>Sale</th>
+                                            <th></th>
                                             <th>Status</th>
+                                            <th>Created</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Jacob</td>
-                                            <td>Photoshop</td>
-                                            <td className="text-danger"> 28.76% <i className="mdi mdi-arrow-down"></i></td>
+                                            <td className="py-1">
+                                                <img src={face1} alt="face" />
+                                            </td>
+                                            <td>Jacob Eloe</td>
                                             <td><label className="badge badge-danger">Pending</label></td>
+                                            <td>12 August 2017</td>
                                         </tr>
                                         <tr>
-                                            <td>Messsy</td>
-                                            <td>Flash</td>
-                                            <td className="text-danger"> 21.06% <i className="mdi mdi-arrow-down"></i></td>
+                                            <td className="py-1">
+                                                <img src={face2} alt="face" />
+                                            </td>
+                                            <td>Mercy Kate</td>
                                             <td><label className="badge badge-warning">In progress</label></td>
+                                            <td>15 May 2017</td>
                                         </tr>
                                         <tr>
-                                            <td>John</td>
-                                            <td>Premier</td>
-                                            <td className="text-danger"> 35.00% <i className="mdi mdi-arrow-down"></i></td>
+                                            <td className="py-1">
+                                                <img src={face3} alt="face" />
+                                            </td>
+                                            <td>John Seji</td>
                                             <td><label className="badge badge-info">Fixed</label></td>
+                                            <td>9 September 2017</td>
                                         </tr>
                                         <tr>
-                                            <td>Peter</td>
-                                            <td>After effects</td>
-                                            <td className="text-success"> 82.00% <i className="mdi mdi-arrow-up"></i></td>
+                                            <td className="py-1">
+                                                <img src={face4} alt="face" />
+                                            </td>
+                                            <td>Peter Nyumbani</td>
                                             <td><label className="badge badge-success">Completed</label></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dave</td>
-                                            <td>53275535</td>
-                                            <td className="text-success"> 98.05% <i className="mdi mdi-arrow-up"></i></td>
-                                            <td><label className="badge badge-warning">In progress</label></td>
+                                            <td>7 July 2017</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -72,27 +74,28 @@ const Statistics = () => {
                     <div className="card">
                         <div className="card-body">
                             <h4 className="card-title resp">Total Number of Responses</h4>
-                            <p className="mb-7 card-description mb-7">This is the summed up number over the months of the responses acquired from all the surveys conveyed in the respective months. It shows how many responses were aquired in each month.</p>
+                            <p className="mb-7 card-description mb-7">Summed up number of responses over the months acquired from all the surveys conveyed in the respective months.
+                            <br />
+                            <br />
+                            Level of responses per month.</p>
                             <canvas id="barChart"></canvas>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="row">
-                <div className="col-md-5 grid-margin stretch-card">
+                <div className="col-md-4 grid-margin stretch-card">
                     <div className="card">
                         <div className="card-body">
-                            <h4 className="card-title">Total sales</h4>
-                            <h1>$ 28835</h1>
-                            <h4>Gross sales over the years</h4>
-                            <p className="card-description">Today, many people rely on computers to do homework, work, and create or store
-                    useful information. Therefore, it is important </p>
+                            <h4 className="card-title">Total Surveys Conveyed</h4>
+                            <h1>1,835</h1>
+                            <p className="card-description">Number of surveys that Toffi has sent to the people and has also created for other companies.</p>
                             <div id="total-sales-chart-legend"></div>
                         </div>
                         <canvas id="total-sales-chart"></canvas>
                     </div>
                 </div>
-                <div className="col-md-7 grid-margin stretch-card">
+                <div className="col-md-8 grid-margin stretch-card">
                     <div className="card">
                         <div className="card-body">
                             <h5 className="card-title">Reports</h5>
@@ -116,21 +119,11 @@ const Statistics = () => {
                                 <table className="table table-striped">
                                     <thead>
                                         <tr>
-                                            <th>
-                                                Profile
-                          </th>
-                                            <th>
-                                                Full Names
-                          </th>
-                                            <th>
-                                                Progress
-                          </th>
-                                            <th>
-                                                Surveys
-                          </th>
-                                            <th>
-                                                Date Created
-                          </th>
+                                            <th>Profile</th>
+                                            <th>Full Names</th>
+                                            <th>Progress</th>
+                                            <th>Surveys</th>
+                                            <th>Date Created</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -138,9 +131,7 @@ const Statistics = () => {
                                             <td className="py-1">
                                                 <img src={face1} alt="face" />
                                             </td>
-                                            <td>
-                                                Herman Beck
-                          </td>
+                                            <td>Herman Beck</td>
                                             <td>
                                                 <div className="progress">
                                                     <div className="progress-bar bg-success herman" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
