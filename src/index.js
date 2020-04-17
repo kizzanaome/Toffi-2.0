@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './assets/css/materialdesignicons.min.css';
- 
+// import './components/surveys/nosurveys.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
