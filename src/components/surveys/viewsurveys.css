@@ -1,0 +1,36 @@
+table{
+width: auto;
+height: 592px;
+left: 310px;
+top: 308px;
+justify-content: center;
+place-items: center;
+}
+
+th{
+justify-content: center;
+width: 1093px;
+height: 75px;
+left: 310px;
+top: 233px;
+background: #C4C4C4;
+}
+
+.survey1{
+justify-content: center;
+width: 1093px;
+height: 75px;
+left: 310px;
+top: 308px;
+
+}
+
+.survey2{
+justify-content: center;
+width: 1093px;
+height: 75px;
+left: 311px;
+top: 384px;
+
+background: rgba(128, 128, 128, 0.1);
+}
