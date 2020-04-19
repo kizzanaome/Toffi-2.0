@@ -46,3 +46,25 @@
   background-color: transparent;
   box-shadow: none !important;
 }
+
+.add-bg {
+  background-image: url('../../assets/images/wallie.svg');
+  color: #fff;
+  background-size: cover;
+}
+
+.hr-table {
+  color: #fff;
+}
+
+.hr-table th,
+.hr-table td {
+  padding: 1.25rem 0.9375rem;
+  vertical-align: top;
+  border-top: 1px solid #f3f3f328;
+}
+
+.table-hovered tbody tr:hover {
+  color: #212529;
+  background-color: #eaeaf149;
+}

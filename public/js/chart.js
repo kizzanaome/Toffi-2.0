@@ -3,21 +3,20 @@ $(function() {
    * -------
    * Data and config for chartjs
    */
-  'use strict';
+  // 'use strict';
   var data = {
     labels: ["Jul", "Aug", "Sept", "Oct", "Nov", "Dec"],
     datasets: [{
-      label: 'level of Responses',
+      label: 'Number of Responses',
       data: [10, 19, 3, 5, 16, 3],
       backgroundColor: [
-        '#c12020',
-        '#c12020',
-        '#c12020',
-        '#c12020',
-        '#c12020',
-        '#c12020'
-      ],
-      fill: false
+        'rgba(255, 71, 71, 1)',
+        'rgba(255, 71, 71, 1)',
+        'rgba(255, 71, 71, 1)',
+        'rgba(255, 71, 71, 1)',
+        'rgba(255, 71, 71, 1)',
+        'rgba(255, 71, 71, 1)'
+      ]
     }]
   };
   var multiLineData = {
@@ -105,25 +104,36 @@ $(function() {
     }
   };
   var areaData = {
-    labels: ["2013", "2014", "2015", "2016", "2017"],
+    labels: ["Jul", "Aug", "Sept", "Oct", "Nov", "Dec"],
     datasets: [{
-      label: '# of Votes',
-      data: [12, 19, 3, 5, 2, 3],
+      label: 'Data of level of responses over time',
+      data: [12, 19, 3, 7, 1, 3],
       backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)'
+        'rgba(255, 193, 0, 0.2)',
+        'rgba(255, 193, 0, 0.2)',
+        'rgba(255, 193, 0, 0.2)',
+        'rgba(255, 193, 0, 0.2)',
+        'rgba(255, 193, 0, 0.2)',
+        'rgba(255, 193, 0, 0.2)',
+
+
+        // 'rgba(255, 99, 132, 0.2)',
+        // 'rgba(54, 162, 235, 0.2)',
+        // 'rgba(255, 206, 86, 0.2)',
+        // 'rgba(75, 192, 192, 0.2)',
+        // 'rgba(153, 102, 255, 0.2)',
+        // 'rgba(255, 159, 64, 0.2)'
+
+        // 'rgb(204, 154, 0, 0.2)',
+        // 'rgb(255, 193, 0, 0.2)',
       ],
       borderColor: [
-        'rgba(255,99,132,1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
+        'rgba(255, 193, 0, 1)',
+        'rgba(255, 193, 0, 1)',
+        'rgba(255, 193, 0, 1)',
+        'rgba(255, 193, 0, 1)',
+        'rgba(255, 193, 0, 1)',
+        'rgba(255, 193, 0, 1)',
       ],
       borderWidth: 1,
       fill: true, // 3: no fill

@@ -14778,7 +14778,7 @@ button.bg-warning:focus {
 }
 
 .bg-danger {
-  background-color: #ff4747 !important;
+  background-color: #ff4747!important;
 }
 
 a.bg-danger:hover, a.bg-danger:focus,
@@ -15034,6 +15034,7 @@ button.bg-dark:focus {
   }
   .d-md-inline-flex {
     display: inline-flex !important;
+    color: rgba(193, 32, 32, 0.7);
   }
 }
 
