@@ -1,6 +1,6 @@
 import React from 'react';
 import check from '../../assets/images/check.svg';
-import question  from '../../assets/images/question.svg';
+import question from '../../assets/images/question.svg';
 import flag from '../../assets/images/flag.svg';
 import sun from '../../assets/images/sun.svg';
 
@@ -9,11 +9,11 @@ const Tiles = () => {
     return (
         <div className="row">
             <div className="col-md-12 grid-margin stretch-card">
-                <div className="card">
+                <div className="card no-bg">
                     <div className="card-body p-0">
                         <div className="tab-content py-0 px-0">
-                            <div className="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
-                                <div className="d-flex flex-wrap justify-content-xl-between">
+                            <div className="tab-pane">
+                                <div className="d-flex flex-wrap justify-content-xl-between more">
                                     <div className="tab-card">
                                         <img src={check} alt="check" className="mr-3" />
                                         <div className="d-flex flex-column justify-content-around">

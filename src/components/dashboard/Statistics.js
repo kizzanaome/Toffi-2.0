@@ -11,7 +11,7 @@ import face7 from '../../assets/images/faces/face7.jpg'
 const Statistics = () => {
 
     return (
-        <div>
+        <div className="stats">
             <div className="row">
                 <div className="col-lg-6 grid-margin stretch-card">
                     <div className="card">
@@ -35,15 +35,15 @@ const Statistics = () => {
                                             <td className="py-1">
                                                 <img src={face1} alt="face" />
                                             </td>
-                                            <td>Jacob Eloe</td>
+                                            <td>Jacob</td>
                                             <td><label className="badge badge-danger">Pending</label></td>
-                                            <td>12 August 2017</td>
+                                            <td>12 Aug 2017</td>
                                         </tr>
                                         <tr>
                                             <td className="py-1">
                                                 <img src={face2} alt="face" />
                                             </td>
-                                            <td>Mercy Kate</td>
+                                            <td>Mercy</td>
                                             <td><label className="badge badge-warning">In progress</label></td>
                                             <td>15 May 2017</td>
                                         </tr>
@@ -51,17 +51,17 @@ const Statistics = () => {
                                             <td className="py-1">
                                                 <img src={face3} alt="face" />
                                             </td>
-                                            <td>John Seji</td>
+                                            <td>John</td>
                                             <td><label className="badge badge-info">Fixed</label></td>
-                                            <td>9 September 2017</td>
+                                            <td>9 Sept 2017</td>
                                         </tr>
                                         <tr>
                                             <td className="py-1">
                                                 <img src={face4} alt="face" />
                                             </td>
-                                            <td>Peter Nyumbani</td>
+                                            <td>Peter</td>
                                             <td><label className="badge badge-success">Completed</label></td>
-                                            <td>7 July 2017</td>
+                                            <td>7 Jul 2017</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -74,15 +74,17 @@ const Statistics = () => {
                     <div className="card">
                         <div className="card-body">
                             <h4 className="card-title resp">Total Number of Responses</h4>
-                            <p className="mb-7 card-description mb-7">Summed up number of responses over the months acquired from all the surveys conveyed in the respective months.
+                            <p className="mb-7 card-description mb-7">Data of all the summed up number of responses over the months acquired from all the surveys conveyed in the respective months.
                             <br />
-                            <br />
-                            Level of responses per month.</p>
+                                <br />
+                                <br />
+                            </p>
                             <canvas id="barChart"></canvas>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div className="row">
                 <div className="col-md-4 grid-margin stretch-card">
                     <div className="card">
@@ -107,156 +109,79 @@ const Statistics = () => {
                     </div>
                 </div>
             </div>
+
             <div className="row">
-                <div className="col-lg-12 stretch-card">
-                    <div className="card">
+                <div class="col-lg-8 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 className="card-title resp">Level of feedback</h4>
+                            <p className="mb-7 card-description mb-7">Summed up number of responses over the months acquired from all the surveys conveyed in the respective months.
+                            </p>
+                            <canvas id="areaChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-lg-4 grid-margin stretch-card">
+                    <div className="card add-bg">
                         <div className="card-body">
-                            <h4 className="card-title">The Admin board</h4>
+                            <h4 className="card-title">The Surveys</h4>
                             <p className="card-description">
-                                The team behind our great questions for the surveys created each unique in its own way.
-                  </p>
+                                The surveys that have been created and tested in the public for user feedback and their progress.</p>
                             <div className="table-responsive">
-                                <table className="table table-striped">
+                                <table className="table table-hovered hr-table">
                                     <thead>
                                         <tr>
-                                            <th>Profile</th>
-                                            <th>Full Names</th>
-                                            <th>Progress</th>
                                             <th>Surveys</th>
-                                            <th>Date Created</th>
+                                            <th>Progress</th>
+                                            <th>Created</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td className="py-1">
-                                                <img src={face1} alt="face" />
-                                            </td>
-                                            <td>Herman Beck</td>
+                                            <td>Tax Survey</td>
                                             <td>
                                                 <div className="progress">
                                                     <div className="progress-bar bg-success herman" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                             </td>
-                                            <td>
-                                                77
-                          </td>
-                                            <td>
-                                                May 15, 2015
-                          </td>
+                                            <td>May 15</td>
                                         </tr>
                                         <tr>
-                                            <td className="py-1">
-                                                <img src={face2} alt="face" />
-                                            </td>
-                                            <td>
-                                                Messsy Adam
-                          </td>
+                                            <td>Master Survey</td>
                                             <td>
                                                 <div className="progress">
                                                     <div className="progress-bar bg-danger adam" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                             </td>
-                                            <td>
-                                                245
-                          </td>
-                                            <td>
-                                                July 1, 2015
-                          </td>
+                                            <td>Jul 1</td>
                                         </tr>
                                         <tr>
-                                            <td className="py-1">
-                                                <img src={face3} alt="face" />
-                                            </td>
-                                            <td>
-                                                John Richards
-                          </td>
+                                            <td>Gov't Survey</td>
                                             <td>
                                                 <div className="progress">
                                                     <div className="progress-bar bg-warning john" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                             </td>
-                                            <td>
-                                                138
-                          </td>
-                                            <td>
-                                                Apr 12, 2015
-                          </td>
+                                            <td>Apr 12</td>
                                         </tr>
                                         <tr>
-                                            <td className="py-1">
-                                                <img src={face4} alt="face" />
-                                            </td>
-                                            <td>
-                                                Peter Meggik
-                          </td>
+                                            <td>PAYE Survey</td>
                                             <td>
                                                 <div className="progress">
                                                     <div className="progress-bar bg-primary peter" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                             </td>
-                                            <td>
-                                                77
-                          </td>
-                                            <td>
-                                                May 15, 2015
-                          </td>
+                                            <td>May 15</td>
                                         </tr>
                                         <tr>
-                                            <td className="py-1">
-                                                <img src={face5} alt="face" />
-                                            </td>
-                                            <td>
-                                                Edward
-                          </td>
+                                            <td>Job Survey</td>
                                             <td>
                                                 <div className="progress">
                                                     <div className="progress-bar bg-danger edd" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                             </td>
-                                            <td>
-                                                160
-                          </td>
-                                            <td>
-                                                May 03, 2015
-                          </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="py-1">
-                                                <img src={face6} alt="face" />
-                                            </td>
-                                            <td>
-                                                John Doe
-                          </td>
-                                            <td>
-                                                <div className="progress">
-                                                    <div className="progress-bar bg-info doe" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                123
-                          </td>
-                                            <td>
-                                                April 05, 2015
-                          </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="py-1">
-                                                <img src={face7} alt="face" />
-                                            </td>
-                                            <td>
-                                                Henry Tom
-                          </td>
-                                            <td>
-                                                <div className="progress">
-                                                    <div className="progress-bar bg-warning tom" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                150
-                          </td>
-                                            <td>
-                                                June 16, 2015
-                          </td>
+                                            <td>May 03</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -264,6 +189,7 @@ const Statistics = () => {
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     );

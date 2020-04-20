@@ -5,8 +5,8 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="d-sm-flex justify-content-center justify-content-sm-between">
-                <span className="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2020 <a
-                    href="https://www.dagartstudios.com/">Dagart Studios</a>. All rights reserved.</span>
+                <p className="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright ©<a
+                    href="https://www.dagartstudios.com/">Toffi.co</a> 2020 All rights reserved.</p>
             </div>
         </footer>
     );

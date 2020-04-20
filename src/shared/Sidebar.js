@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
 
@@ -7,17 +7,16 @@ const Sidebar = () => {
         <nav className="sidebar sidebar-offcanvas" id="sidebar">
             <ul className="nav">
                 <li className="nav-item">
-                    <Link className="nav-link" to="/">
+                    <a className="nav-link" href="index.html">
                         <i className="mdi mdi-view-dashboard menu-icon"></i>
                         <span className="menu-title">Dashboard</span>
-                    </Link>
+                    </a>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/nosurvey" aria-expanded="false" aria-controls="ui-basic">
+                    <a className="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                         <i className="mdi mdi-eye menu-icon"></i>
-                        <span  className="menu-title">View Surveys</span>
-                        <i className="menu-arrow"></i>
-                    </Link>
+                        <span className="menu-title">View Surveys</span>
+                    </a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="pages/forms/basic_elements.html">
@@ -35,6 +34,12 @@ const Sidebar = () => {
                     <a className="nav-link" href="pages/tables/basic-table.html">
                         <i className="mdi mdi-table-large menu-icon"></i>
                         <span className="menu-title"> View Tables</span>
+                    </a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="pages/icons/mdi.html">
+                        <i className="mdi mdi-emoticon menu-icon"></i>
+                        <span className="menu-title">Icons</span>
                     </a>
                 </li>
                 <li className="nav-item">

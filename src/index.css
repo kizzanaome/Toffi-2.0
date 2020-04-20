@@ -12490,14 +12490,7 @@ input[type="button"].btn-block {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* position: absolute; */
-  /* width: 250.23px;
-  height: 120px; */
-  /* left: 303px;
-  top: 180px; */
-
-  
+  margin: 0 10px 20px 0;
   box-sizing: border-box;
   border-radius: 5px;
 }
@@ -12514,6 +12507,7 @@ input[type="button"].btn-block {
 
 .tab-card-3 {
   background-image: url('./assets/images/cardbg2.svg');
+  margin: 0 0 20px 0 !important;
 }
 
 .navbar {
@@ -12886,10 +12880,8 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  /* border: 1px solid #e7eaed; */
   border-radius: 5px !important;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05) !important;
-  /* box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1); */
 }
 
 .card > hr {
@@ -14786,7 +14778,7 @@ button.bg-warning:focus {
 }
 
 .bg-danger {
-  background-color: #ff4747 !important;
+  background-color: #ff4747!important;
 }
 
 a.bg-danger:hover, a.bg-danger:focus,
@@ -15042,6 +15034,7 @@ button.bg-dark:focus {
   }
   .d-md-inline-flex {
     display: inline-flex !important;
+    color: rgba(193, 32, 32, 0.7);
   }
 }
 
@@ -21895,7 +21888,7 @@ dl li {
 .rtl .sidebar-fixed .nav::-webkit-scrollbar-track,
 .rtl .table-responsive::-webkit-scrollbar-track,
 .rtl ul.chats::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 .rtl .product-chart-wrapper::-webkit-scrollbar-thumb,

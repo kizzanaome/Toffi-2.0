@@ -1,4 +1,6 @@
 import React from 'react';
+import './dashboard.css';
+
 import Sidebar from '../../shared/Sidebar'
 import Navbar from '../../shared/Navbar';
 import Footer from '../../shared/Footer';
