@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/79503314-7c2c-4f07-9dd0-0057d9db084d/deploy-status)](https://app.netlify.com/sites/toffi-survey/deploys)
 
-This is a survey application that helps create surveys for client's businesses so as to collectively gather required information from their customers
+This is a survey application that helps create surveys for client's businesses so as to collectively gather required information from their customers or clients.
 
 ## Prerequists
 
