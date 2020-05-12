@@ -1,29 +1,35 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
 
     return (
         <nav className="sidebar sidebar-offcanvas" id="sidebar">
             <ul className="nav">
+                {/* <Link className="nav-item" to="/"> */}
                 <li className="nav-item">
-                    <a className="nav-link" href="index.html">
+                    <a className="nav-link" href="index.html" >
                         <i className="mdi mdi-view-dashboard menu-icon"></i>
                         <span className="menu-title">Dashboard</span>
                     </a>
                 </li>
+                {/* </Link> */}
+                {/* <Link className="nav-item" to="/nosurvey"> */}
                 <li className="nav-item">
-                    <a className="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                    <Link className="nav-link" to="/nosurvey">
                         <i className="mdi mdi-eye menu-icon"></i>
                         <span className="menu-title">View Surveys</span>
-                    </a>
+                    </Link>
                 </li>
-                <li className="nav-item">
+                {/* </Link> */}
+                <Link className="nav-item" to="/notfound">
+                {/* <li className="nav-item"> */}
                     <a className="nav-link" href="pages/forms/basic_elements.html">
                         <i className="mdi mdi-comment menu-icon"></i>
                         <span className="menu-title">Create Questions</span>
                     </a>
-                </li>
+                {/* </li> */}
+                </Link>
                 <li className="nav-item">
                     <a className="nav-link" href="pages/charts/chartjs.html">
                         <i className="mdi mdi-chart-bar menu-icon"></i>
